@@ -1,0 +1,77 @@
+@keyframes green-fill {
+  0% {
+    background-image: conic-gradient(red 0deg, red 0deg);
+  }
+  100% {
+    background-image: conic-gradient(green 0deg, green 360deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    background-color: #ffffcc; /* Amarillo muy claro */
+  }
+  50% {
+    transform: scale(1.1);
+    background-color: #ffff99; /* Amarillo claro */
+  }
+  100% {
+    transform: scale(1);
+    background-color: #ffffcc; /* Amarillo muy claro */
+  }
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+}
+
+.circle {
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.inner-circle {
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  background-color: #ffffcc; /* Amarillo muy claro */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#timer-text {
+  font-size: 3.25vw;
+}
+
+#start-btn {
+  margin-top: 20px;
+  padding: 1.75vw 2.5vw;
+  font-size: 2vw;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#start-btn:hover {
+  background-color: #45a049;
+}
